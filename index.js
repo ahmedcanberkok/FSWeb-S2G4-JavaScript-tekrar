@@ -116,57 +116,29 @@ diziuz ();
 	}
 	enbenk ()
 	
-	
 	// 3b çözümü:
-  function ucb ( ucetambolunenler) {
-    ucetambolunenler = [];
-    sayilar.forEach(function(sayilar){
-		if(sayilar % 3 ===0 )
-		ucetambolunenler.push(sayilar) ;
-	} ) ;  
-	console.log('ucetambölünendizi :',ucetambolunenler) ;
-	return ucetambolunenler;
-	
- }
- ucb ()
 
-		
-	//3c çözümü:
-	
-	
-	
-	
-	//3d çözümü
-	function ucd (besyuzdenkucuksayilar) {
-		besyuzdenkucuksayilar = [] ;
-	const result = sayilar.filter ((sayilar)=> {
-		for (var i = 0; i < sayilar.length; i++) {
-
-			if (sayilar[i] > 500) {
-			return	besyuzdenkucuksayilar.push(sayilar);
-			} else if (sayilar[i] < 500) {
-				return ;
-			}
-		  } 
-}) ; 
-	console.log('besyüzdenkucuksayilardizi :',besyuzdenkucuksayilar) ;
-	return besyuzdenkucuksayilar ;
-
-} 
- ucd ();
+// ucetambolunenler = sayilar.filter(i => i % 3 === 0);
+ ucetambolunenler = [];
+sayilar.forEach((i) => { if ((i % 3) === 0) { ucetambolunenler.push(i) } });
+console.log('ucetambölünen dizi:',ucetambolunenler);
 
 
+//3c çözümü:
 
-	//3e çözümü
+ ucebolunenlerintoplami = ucetambolunenler.reduce((a, b) => a + b, 0);
 
-	function uce (siralisayilar) {
-	const newarrays= [] ;	
-	besyuzdenkucuksayilar=besyuzdenkucuksayilar.sort();
-		newarrays = besyuzdenkucuksayilar.push(newarrays)
-	console.log(newarrays)		
-	} 
-			uce()
-			
+
+//3d çözümü
+
+ besyuzdenkucuksayilar = sayilar.filter(i => i < 500);
+console.log('besyüzdenkücüksayilar :',besyuzdenkucuksayilar);
+
+
+//3e çözümü
+
+ siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
+console.log('sirali sayilar :',siralisayilar);
 	
 	//3f çözümü
 	
