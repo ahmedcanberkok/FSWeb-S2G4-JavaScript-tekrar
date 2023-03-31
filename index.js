@@ -118,7 +118,6 @@ diziuz ();
 	
 	// 3b çözümü:
 
-// ucetambolunenler = sayilar.filter(i => i % 3 === 0);
  ucetambolunenler = [];
 sayilar.forEach((i) => { if ((i % 3) === 0) { ucetambolunenler.push(i) } });
 console.log('ucetambölünen dizi:',ucetambolunenler);
